@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./736462.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#input {
+    background-color: #71b0f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Set a maximum width */
+    width: 50%; /* Make it responsive */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #042045;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add margin to separate from input fields */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transform: scale(0);
+    animation: scaleUp 0.3s forwards;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+}
+
+.card h3 {
+    margin: 5px 0 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(1);
+    }
+}
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #21769b;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.heading:hover {
+    background-color: #063748;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+/* Existing styles */
+
+.card {
+    /* Existing styles */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+.card {
+    /* Existing styles */
+    position: relative; /* Add relative positioning */
+}
+
+
+
